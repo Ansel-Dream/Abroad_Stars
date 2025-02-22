@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <title>Employee Database System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .container h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Employee Database System</h1>
+        <div>
+            <a href="/Dashboard">DashBoard</a>
+            <a href="#">Search</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Update Employee Data</h2>
+        <form action="/edit/<%= finalname.Name %>?_method=put" method="post" enctype="application/x-www-form-urlencoded">
+            <div class="form-group">
+                <input type="text" value="<%= finalname.Name %>" name="Name">
+            </div>
+            <div class="form-group">
+                <input type="text" value="<%= finalname.Email %>" name="Email">
+            </div>
+            <div class="form-group">
+                <input type="text" value="<%= finalname.Phone %>" name="Phone">
+            </div>
+            <div class="form-group">
+                <textarea type="text" name="Textarea" style="height: 80px; width: 100%; border: transparent; background-color: #eee; border-radius: 8px; margin: 8px 0; padding: 10px 15px;"><%= finalname.Textarea %></textarea>
+            </div>
+            <button class="btn" type="submit">Update Employee</button>
+        </form>
+    </div>
+</body>
+
+</html>

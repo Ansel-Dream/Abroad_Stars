@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="https://api.dsapsol.com/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Anotomy MUSEUM</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins';
+        }
+
+        :root {
+            --prime: <%=direction %>
+        }
+
+        .about-most-outsider {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            padding: 40px 0;
+        }
+
+        .about-container {
+            max-width: 1200px;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            display: flex;
+            align-items: stretch;
+            padding: 40px;
+            margin: 20px;
+            flex-direction: var(--prime);
+        }
+
+        .about-text {
+            flex: 1;
+            padding-right: 40px;
+        }
+
+        .about-text h2 {
+            color: #6c757d;
+            font-size: 14px;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .about-text h1 {
+            color: #343a40;
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .about-text h1 span {
+            color: #0cc0df;
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 0 5px;
+            border-radius: 5px;
+        }
+
+        .about-text p {
+            color: #6c757d;
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .about-text p strong {
+            color: #343a40;
+        }
+
+        .about-text .cta-btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #f36f45;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .about-text .cta-btn:hover {
+            background-color: #357ab8;
+            transform: translateY(-2px);
+        }
+
+        .about-image {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 1000px;
+            max-height: 400px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-top: 33px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .about-text {
+                padding-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .about-image {
+                margin-top: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .about-text h1 {
+                font-size: 36px;
+            }
+
+            .about-text p {
+                font-size: 14px;
+            }
+
+            .about-text .cta-btn {
+                padding: 10px 20px;
+                font-size: 14px;
+            }
+        }
+
+        .unique-img-section {
+            padding: 30px;
+            background-color: #ffffff;
+            /* Pure white background */
+            text-align: center;
+            /* Centering the images */
+        }
+
+        /* Styling for the custom row container */
+        .custom-row {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            /* Adds spacing between columns */
+        }
+
+        /* Styling for each column */
+        .custom-col {
+            flex: 1;
+            max-width: 23%;
+            box-sizing: border-box;
+        }
+
+        /* Styling for the images */
+        .image-item {
+            width: 100%;
+            height: 250px;
+            /* Fixed height for the images */
+            object-fit: cover;
+            /* Ensures images cover the area without stretching */
+            border-radius: 12px;
+            /* Rounded corners */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            /* Subtle shadow for depth */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            /* Smooth transition for hover */
+        }
+
+        /* Hover effect on images */
+        .image-item:hover {
+            transform: scale(1.05);
+            border: 1px solid #0cc0df;
+            /* Slight zoom effect */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /* Stronger shadow on hover */
+        }
+
+        @media (max-width: 768px) {
+            .custom-col {
+                max-width: none;
+            }
+
+            .custom-row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('../../common/header') %>
+        <div class="about-most-outsider">
+            <div class="about-container">
+                <div class="about-text">
+                    <h1><span>ANATOMY MUSEUM</span></h1>
+                    <p>The <b>Anatomy Museum</b> at IUK is a center of learning, featuring a diverse collection of
+                        anatomical
+                        specimens
+                        and models. It offers hands-on learning experiences for students, reinforcing theoretical
+                        knowledge and
+                        supporting faculty research. Additionally, the museum promotes health awareness and sparks
+                        curiosity
+                        about the human body through outreach programs and exhibitions. Serving as a beacon of
+                        education, it
+                        empowers future medical professionals to make impactful contributions to healthcare.</p>
+                    <a class="cta-btn" href="/contact">Contact Us</a>
+                </div>
+                <div class="about-image">
+                    <img src="https://api.dsapsol.com/anatomy_main.JPG" alt="Image 1" />
+                </div>
+            </div>
+        </div>
+
+        <section class="unique-img-section">
+            <div class="custom-row">
+                <div class="custom-col">
+                    <img src="https://api.dsapsol.com/anotomy1.png" alt="Image 1" class="image-item">
+                </div>
+                <div class="custom-col">
+                    <img src="https://api.dsapsol.com/anotomy2.png" alt="Image 2" class="image-item">
+                </div>
+                <div class="custom-col">
+                    <img src="https://api.dsapsol.com/anotomy3.JPG" alt="Image 3" class="image-item">
+                </div>
+                <div class="custom-col">
+                    <img src="https://api.dsapsol.com/anotomy4.JPG" alt="Image 4" class="image-item">
+                </div>
+            </div>
+            <%- include('../../common/footer') %>
+        </section>
+</body>
+
+</html>

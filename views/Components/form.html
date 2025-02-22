@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <title>Apply for Admission</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            color: #d32f2f;
+            font-size: 28px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: none;
+        }
+
+        input[type="submit"] {
+            background-color: #d32f2f;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #b71c1c;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 24px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            input[type="file"],
+            textarea {
+                padding: 10px;
+                font-size: 12px;
+            }
+
+            input[type="submit"] {
+                padding: 10px 15px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Apply for Admission</h1>
+        <p>Free Assessment of Educational Documents</p>
+        <form>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text" id="phoneNumber" name="phoneNumber">
+
+            <label for="grade12Result">Inter / A - Levels / Grade 12 Result</label>
+            <input type="file" id="grade12Result" name="grade12Result">
+
+            <label for="grade10Result">Matric / O - Levels / Grade 10 Result</label>
+            <input type="file" id="grade10Result" name="grade10Result">
+
+            <label for="message">Your message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+</body>
+
+</html>

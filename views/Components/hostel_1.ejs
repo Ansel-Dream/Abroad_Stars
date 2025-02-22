@@ -1,0 +1,337 @@
+<style>
+    .school-outsider {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #fff;
+        color: #333;
+    }
+
+    .school-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .school-intro {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .school-intro button {
+        background-color: #f0f0ff;
+        color: #6a0dad;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .school-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .school-header h1 {
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+
+    .school-header span {
+        color: #6a0dad;
+    }
+
+    .school-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .school-content .left-side,
+    .school-content .right-side {
+        flex: 1;
+        min-width: 300px;
+        margin: 10px;
+    }
+
+    .school-content .left-side {
+        position: relative;
+    }
+
+    .school-content .left-side img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .school-content .left-side .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.8);
+        border: none;
+        border-radius: 50%;
+        padding: 20px;
+        cursor: pointer;
+    }
+
+    .school-content .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .school-experience {
+        background-color: #6a0dad;
+        color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .school-experience h2 {
+        font-size: 2em;
+        margin: 0;
+    }
+
+    .school-experience p {
+        margin: 0;
+    }
+
+    .school-services {
+        margin-bottom: 20px;
+    }
+
+    .school-services .service-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .school-services .service-item .service-number {
+        background-color: #f0f0ff;
+        color: #6a0dad;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+    .school-services .service-item h3 {
+        margin: 0;
+        font-size: 1.2em;
+    }
+
+    .school-services .service-item p {
+        margin: 0;
+        color: #666;
+    }
+
+    .school-more-info {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .school-more-info button {
+        background-color: #6a0dad;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    @media (max-width: 1200px) {
+        .school-container {
+            padding: 20px 10px;
+        }
+
+        .school-header h1 {
+            font-size: 2em;
+        }
+
+        .school-header span {
+            font-size: 1.5em;
+        }
+
+        .school-content .left-side,
+        .school-content .right-side {
+            min-width: 48%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .school-content {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .school-content .left-side,
+        .school-content .right-side {
+            min-width: 100%;
+        }
+
+        .school-header h1 {
+            font-size: 1.8em;
+        }
+
+        .school-experience h2 {
+            font-size: 1.8em;
+        }
+
+        .school-experience p {
+            font-size: 1em;
+        }
+
+        .school-services .service-item h3 {
+            font-size: 1.1em;
+        }
+
+        .school-services .service-item p {
+            font-size: 0.9em;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .school-header h1 {
+            font-size: 1.5em;
+        }
+
+        .school-experience h2 {
+            font-size: 1.5em;
+        }
+
+        .school-services .service-item h3 {
+            font-size: 1em;
+        }
+
+        .school-services .service-item p {
+            font-size: 0.85em;
+        }
+
+        .school-more-info button {
+            font-size: 0.9em;
+            padding: 8px 16px;
+        }
+    }
+</style>
+
+<div class="school-outsider">
+    <div class="school-container">
+        <div class="school-intro">
+            <button>
+                INTRODUCTION OF OUR SCHOOL
+            </button>
+        </div>
+        <div class="school-header">
+            <h1>
+                We Are The Leading Educational
+                <span>
+                    School
+                </span>
+                Since 1990.
+            </h1>
+        </div>
+        <div class="school-content">
+            <div class="left-side">
+                <img alt="A teacher teaching a class of students" height="400"
+                    src="https://storage.googleapis.com/a1aa/image/o6DB6iCGjhoSPV210Vm1dMCK0ifu1JZtl4bZQ33dks1rkLEKA.jpg"
+                    width="600" />
+                <button class="play-button">
+                    <i class="fas fa-play">
+                    </i>
+                </button>
+            </div>
+            <div class="right-side">
+                <!-- <div class="school-experience">
+                    <h2>
+                        20+
+                    </h2>
+                    <p>
+                        YEARS OF EDUCATIONAL EXCELLENCE
+                    </p>
+                </div> -->
+                <div class="school-services">
+                    <div class="service-item">
+                        <div class="service-number">
+                            01
+                        </div>
+                        <div>
+                            <h3>
+                                Start with Early Learning
+                            </h3>
+                            <p>
+                                Our school focuses on building a strong foundation for young learners.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-number">
+                            02
+                        </div>
+                        <div>
+                            <h3>
+                                Advanced Teaching Methods
+                            </h3>
+                            <p>
+                                We use innovative techniques and tools to ensure a dynamic learning experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-number">
+                            03
+                        </div>
+                        <div>
+                            <h3>
+                                Holistic Development
+                            </h3>
+                            <p>
+                                We focus on the intellectual, physical, and emotional growth of each student.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-number">
+                            04
+                        </div>
+                        <div>
+                            <h3>
+                                Advanced Teaching Methods
+                            </h3>
+                            <p>
+                                We use innovative techniques and tools to ensure a dynamic learning experience.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                        <div class="service-number">
+                            05
+                        </div>
+                        <div>
+                            <h3>
+                                Advanced Teaching Methods
+                            </h3>
+                            <p>
+                                We use innovative techniques and tools to ensure a dynamic learning experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="school-more-info">
+                    <button>
+                        MORE ABOUT OUR SCHOOL
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

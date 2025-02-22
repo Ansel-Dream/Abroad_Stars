@@ -1,0 +1,104 @@
+<style>
+    .hostel-outsider {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+
+    .hostel-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .hostel-room {
+        position: relative;
+        width: 300px;
+        margin: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .hostel-room img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hostel-room .room-label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: #5a3dff;
+        color: white;
+        padding: 5px 10px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .hostel-room .room-content {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .hostel-room .room-content h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .hostel-room .room-content p {
+        margin: 5px 0 0;
+        font-size: 14px;
+        color: #666;
+    }
+
+    @media (max-width: 1200px) {
+        .hostel-room {
+            width: 45%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hostel-room {
+            width: 100%;
+        }
+    }
+</style>
+
+<div class="hostel-outsider">
+    <div class="hostel-container">
+        <div class="hostel-room">
+            <img src="https://api.dsapsol.com/hs1.jpg" alt="Dormitory Room">
+        </div>
+        <div class="hostel-room">
+            <img src="https://api.dsapsol.com/hs2.jpg" alt="Private Room">
+        </div>
+        <div class="hostel-room">
+            <img src="https://api.dsapsol.com/hs3.jpg" alt="Study Room">
+        </div>
+        <div class="hostel-room">
+            <img src="https://api.dsapsol.com/hs4.jpg" alt="Common Area">
+        </div>
+        <div class="hostel-room">
+            <img src="https://api.dsapsol.com/hs5.jpg" alt="Kitchen Area">
+        </div>
+        <div class="hostel-room">
+            <img src="https://api.dsapsol.com/hs6.jpg" alt="Laundry Room">
+        </div>
+        <div class="hostel-room">
+            <img src="https://api.dsapsol.com/hs7.jpg" alt="Recreational Room">
+        </div>
+        <div class="hostel-room">
+            <img src="https://api.dsapsol.com/hs8.jpg" alt="Study Lounge">
+        </div>
+    </div>
+</div>

@@ -1,0 +1,179 @@
+<style>
+    .hasena-most-outsider {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+    }
+
+    .hasena-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 50px;
+        padding: 20px;
+    }
+
+    .hasena-card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 400px;
+        max-height: auto;
+        text-align: center;
+        transition: transform 0.7s border 0.7s;
+    }
+
+    .hasena-card:hover {
+        transform: translateY(-10px);
+        border: 1.5px solid #0cc0df;
+    }
+
+    .hasena-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .hasena-card-content {
+        padding: 20px;
+    }
+
+    .hasena-card-content h3 {
+        font-size: 1em;
+        margin: 0 0 10px;
+        font-weight: 500;
+        text-decoration: none;
+        color: black;
+    }
+
+    .hasena-card-content p {
+        font-size: 0.9em;
+        color: #666;
+        text-decoration: none;
+        margin: 0 0 20px;
+    }
+
+    .hasena-card-content .hasena-arrow {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        background-color: #f36f45;
+        color: white;
+        border-radius: 50%;
+        line-height: 40px;
+        font-size: 1.2em;
+        transition: background-color 0.3s;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .hasena-card-content .hasena-arrow i {
+        line-height: 40px;
+    }
+
+    .hasena-card-content .hasena-arrow:hover {
+        background-color: #ff4b4b;
+    }
+    .hasena-container a {
+        text-decoration: none; width: 22.5%;
+    }
+
+    @media (max-width: 768px) {
+        .hasena-container {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hasena-container a {width: 100%;}
+        .mission-container {flex-direction: column-reverse;}
+    }
+
+    /* @media (max-width: 380px) {
+        .apply-now {font-size: small;}
+    } */
+</style>
+
+<div class="hasena-most-outsider">
+    <div class="hasena-container">
+        <a href="/gallery" class="anchor">
+            <div class="hasena-card">
+                <img alt="Group of students sitting on steps with a laptop" height="200"
+                    src="https://api.dsapsol.com/pakistan_amm.JPG"
+                    width="300" />
+                <div class="hasena-card-content">
+                    <h3>
+                        Pakistani Ambassador Visit
+                    </h3>
+                    <!-- <p>
+                        Habitasse magnis dictum montes curae bibendum sed nunc
+                    </p> -->
+                    <div class="hasena-arrow">
+                        <i class="fas fa-arrow-right">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/gallery" class="anchor">
+            <div class="hasena-card">
+                <img alt="Two women in orange uniforms working with a robotic arm" height="200"
+                    src="https://api.dsapsol.com/farewell_dinner.jpg"
+                    width="300" />
+                <div class="hasena-card-content">
+                    <h3>
+                        Farewell Dinner Batch 2024
+                    </h3>
+                    <!-- <p>
+                        Habitasse magnis dictum montes curae bibendum sed nunc
+                    </p> -->
+                    <div class="hasena-arrow">
+                        <i class="fas fa-arrow-right">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/gallery" class="anchor">
+            <div class="hasena-card">
+                <img alt="Woman sitting at a table with a laptop and wearing headphones" height="200"
+                    src="https://api.dsapsol.com/brest.jpg"
+                    width="300" />
+                <div class="hasena-card-content">
+                    <h3>
+                        Breast Cancer
+                    </h3>
+                    <!-- <p>
+                        Habitasse magnis dictum montes curae bibendum sed nunc
+                    </p> -->
+                    <div class="hasena-arrow">
+                        <i class="fas fa-arrow-right">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="/gallery" class="anchor">
+            <div class="hasena-card">
+                <img alt="Woman sitting at a table with a laptop and wearing headphones" height="200"
+                    src="https://api.dsapsol.com/ort.JPG"
+                    width="300" />
+                <div class="hasena-card-content">
+                    <h3>
+                        Orientation
+                    </h3>
+                    <!-- <p>
+                        Habitasse magnis dictum montes curae bibendum sed nunc
+                    </p> -->
+                    <div class="hasena-arrow">
+                        <i class="fas fa-arrow-right">
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>

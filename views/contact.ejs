@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="https://api.dsapsol.com/favicon.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'poppins';
+        }
+
+        .Contact-us-most-outsider {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 115vh;
+            /* background: linear-gradient(to top right, #e0e7ff 50%, #f0f4ff 50%); */
+            background-color: #f9f9f9 !important;
+            padding: 20px;
+        }
+
+        .contact-us-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 90%;
+            max-width: 900px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+            overflow: hidden;
+            border: 2px solid #0cc0df;
+        }
+
+        .contact-us-left {
+            flex: 1;
+            background-color: #eaeaea;
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact-us-left h1 {
+            color: #2c3e50;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .contact-us-left img {
+            width: 80%;
+            max-width: 300px;
+            margin-top: 20px;
+        }
+
+        .contact-us-right {
+            flex: 1;
+            background-color: #0cc0df;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            color: white;
+        }
+
+        .contact-us-right input,
+        .contact-us-right textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .contact-us-right input,
+        .contact-us-right textarea {
+            background-color: #fff;
+            color: #333;
+            width: 355px;
+        }
+
+        .contact-us-right textarea {
+            resize: none;
+            height: 100px;
+        }
+
+        .contact-us-right button {
+            background-color: #f36f3a;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 8px;
+            /* text-align: center; */
+            position: relative;
+            left: 40%;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-us-right button:hover {
+            background-color: #ff4757;
+        }
+
+        @media (max-width: 768px) {
+            .Contact-us-most-outsider {
+                padding: auto;
+            }
+
+            .contact-us-container {
+                align-items: center;
+                width: 388px;
+            }
+
+            .contact-us-left {
+                order: 1;
+            }
+
+            .contact-us-right {
+                order: 2;
+            }
+
+            .contact-us-right form input,
+            .contact-us-right textarea {
+                width: 301px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('common/header') %>
+        <div class="Contact-us-most-outsider">
+            <div class="contact-us-container">
+                <div class="contact-us-left">
+                    <h1>Reach Us</h1>
+                    <img src="https://api.dsapsol.com/contact_us.jpg" alt="Education Illustration">
+                </div>
+                <div class="contact-us-right">
+                    <form method="post">
+                        <input placeholder="Name" name="Name" type="text" required />
+                        <input placeholder="Email" name="Email" type="email" required />
+                        <input placeholder="Phone Number" name="Phone" type="tel" required />
+                        <textarea placeholder="Message" name="Textarea" required></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <%- include('common/footer') %>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+<style>
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    .slide {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hero-text {
+        position: absolute;
+        top: 50%;
+        left: 2.5%;
+        transform: translateY(-50%);
+        color: white;
+        max-width: 600px;
+    }
+
+    .hero-text #element {
+        font-size: 2em;
+        margin: 0;
+        line-height: 1.2;
+        font-weight: 700;
+        background-color: #ff4d01;
+        padding: 5px;
+        box-shadow: 4px 4px 2px rgb(26 21 21);
+    }
+
+    .hero-text p {
+        font-size: 2rem;
+        margin: 20px 0;
+        font-weight: 700;
+        text-shadow: 2px 2px 5px gray;
+    }
+
+    .hero-text .btn {
+        background-color: #ff4d01;
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1em;
+        display: inline-block;
+        border: 4px solid #f36f3a;
+        border-radius: 11px;
+    }
+
+    @media (max-width: 768px) {
+        .slider {
+            height: 57vh;
+        }
+    }
+</style>
+
+<div class="slider">
+    <!-- <div class="slide" style="background-image: url('https://api.dsapsol.com/header_hs0.png');"> -->
+    <div class="slide" style="background-image: url('https://api.dsapsol.com/header_hs.jpg');">
+        <div class="hero-text">
+            <span id="element">Your Gateway to Global Education.</span>
+            <p>Stars <span id="element2" style="background-color: rgba(214, 20, 20, 0.68);"></span></p>
+            <a class="btn" href="/apply">Apply Now</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    // var typed = new Typed('#element', {
+    //     strings: ['Your Gateway to Global Education.'],
+    //     typeSpeed: 60,
+    //     backSpeed: 15,
+    //     backDelay: 800,
+    //     showCursor: false,
+    // });
+    var typed = new Typed('#element2', {
+        strings: ['Step In', 'Get Guided', 'Succeed Globally'],
+        typeSpeed: 60,
+        backSpeed: 15,
+        backDelay: 1000,
+        showCursor: true, // Enable the cursor
+        loop: true, // Enable the loop
+    });
+
+</script>

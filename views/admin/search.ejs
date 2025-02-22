@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Employee Database System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            margin-top: 0;
+        }
+
+        .search-box {
+            display: flex;
+            margin-bottom: 20px;
+        }
+
+        .search-box input {
+            flex: 1;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .search-box button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            background-color: #d9534f;
+            color: white;
+            cursor: pointer;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .search-results {
+            margin-top: 20px;
+        }
+
+        .search-results table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .search-results th,
+        .search-results td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        .search-results th {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Employee Database System</h1>
+        <div>
+            <a href="/Dashboard">Dashboard</a>
+            <a href="/add">Add Employee</a>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Search Employee</h2>
+        <form method="post" action="/search" class="search-box">
+            <input type="Name" placeholder="Search by Name" name="Name">
+            <button type="submit">Search in Database</button>
+        </form>
+        <div class="search-results">
+            <h3>Search Results:</h3>
+            <% if (Search_name) { %>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Message</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!-- Update these to match the database field names -->
+                            <td>
+                                <%= Search_name.Name %>
+                            </td>
+                            <td>
+                                <%= Search_name.Email %>
+                            </td> <!-- Assuming the property is 'Designation' -->
+                            <td>
+                                <%= Search_name.Phone %>
+                            </td> <!-- Assuming the property is 'Salary' -->
+                            <td>
+                                <%= Search_name.Textarea %>
+                            </td> <!-- Assuming the property is 'Salary' -->
+                        </tr>
+                    </tbody>
+                </table>
+                <% } else { %>
+                    <p>No results found.</p>
+                    <% } %>
+        </div>
+    </div>
+</body>
+
+</html>

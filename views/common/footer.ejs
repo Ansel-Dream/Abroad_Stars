@@ -1,0 +1,211 @@
+<style>
+    /* Ensure the footer sticks to the bottom on pages with little content */
+    .site-footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 30vh;
+        margin-top: 20px;
+        /* Ensures the footer stays at the bottom of the page */
+        background-color: #f9f9f9;
+        color: #ffffff;
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        border-top: 1px solid #0cc0df
+    }
+
+    .main-content {
+        flex: 1;
+        /* Allows the main content to take the available space */
+    }
+
+    .footer-section {
+        background-color: #f9f9f9;
+        padding: 40px 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .footer-section-column {
+        flex: 1;
+        min-width: 200px;
+        margin: 10px;
+    }
+
+    .footer-section-column h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #3f3b3bd6;
+        padding-bottom: 5px;
+        color: #3f3b3bd6;
+    }
+
+    .footer-section-column p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #3f3b3bd6;
+    }
+
+    .footer-lin {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #3f3b3bd6;
+        text-decoration: none;
+    }
+
+    .footer-section-column ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-section-column ul li {
+        margin: 5px 0;
+    }
+
+    .footer-section-column ul li a {
+        color: #3f3b3bd6;
+        text-decoration: none;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer-section-column ul li a:hover {
+        text-decoration: underline;
+        text-decoration-color: #0cc0df;
+    }
+
+
+    .footer-section-column ul li a:before {
+        content: "\f054";
+        font-family: 'Poppins';
+        font-weight: 900;
+        margin-right: 8px;
+    }
+
+    .social-media-links {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .social-media-links a {
+        color: #3f3b3bd6;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .footer-bottom-bar {
+        text-align: center;
+        margin-top: 20px;
+        padding-top: 10px;
+        font-size: 14px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid #3f3b3bd6;
+        background-color: #eaeaea;
+    }
+
+    .footer-bottom-bar p {
+        color: #3f3b3bd6;
+
+    }
+
+    .footer-bottom-bar a {
+        color: #3f3b3bd6;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .footer-bottom-bar a:hover {
+        border-bottom: 1px solid #0cc0df;
+    }
+
+    /* Media Query Adjustments */
+    @media (max-width: 768px) {
+        .footer-section {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .footer-section-column {
+            margin: 20px 0;
+        }
+
+        .footer-bottom-bar {
+            padding-top: 15px;
+        }
+    }
+
+    .footer-section-column img {
+        margin-bottom: 20px;
+        width: 225px;
+    }
+</style>
+
+<div class="site-footer-wrapper">
+    <div class="main-content">
+        <!-- Main content of the page goes here -->
+    </div>
+    <div class="footer-section">
+        <div class="footer-section-column">
+            <img alt="Skoola logo" height="50" src="https://api.dsapsol.com/logo.png" width="100" />
+            <p>
+                Unlock global opportunities with expert guidance. From application to arrival, we ensure a smooth study
+                abroad journey, turning your dreams into reality.
+            </p>
+            <div class="social-media-links">
+                <a href="https://www.facebook.com/profile.php?id=61573560262022">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/abroadstars2025/">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <!-- <a href="#">
+                    <i class="fab fa-x-twitter"></i>
+                </a> -->
+                <a href="">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
+        <div class="footer-section-column">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="/">Homepage</a></li>
+                <li><a href="/apply">Admission</a></li>
+                <li><a href="/university">(IUK-ISM)</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="footer-section-column">
+            <h3>On Campus (IUK)</h3>
+            <ul>
+                <li><a href="/medical">Medical Clinic</a></li>
+                <li><a href="/education">Educational acts</a></li>
+                <li><a href="/research">Research Center</a></li>
+                <li><a href="/anatomy">Anatomy Museum</a></li>
+                <li><a href="/library">Library</a></li>
+                <li><a href="/computer">Computer Lab</a></li>
+            </ul>
+        </div>
+        <div class="footer-section-column">
+            <h3>Get in touch</h3>
+            <p><i class="fas fa-map-marker-alt"></i> Office #208, 7 April 6, Bishkek, Kyrgyzstan</p>
+            <p style="margin-bottom: 10px;"><i class="fas fa-phone"></i> <a class="footer-lin" href="https://wa.me/+996755128208"
+                    target="_blank">+996 755 128208</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Office #1 First Floor, D-471, 6th Road, Satellite Town, Rawalpindi
+            </p>
+            <p style="margin-bottom: 10px;"><i class="fas fa-phone"></i> <a class="footer-lin" href="https://wa.me/+996755128208" target="_blank">+92
+                    330 0230046</a></p>
+            <p><i class="fas fa-envelope"></i><a class="footer-lin" href="mailto:contact@abroadstars.com">
+                    contact@abroadstars.com</a></p>
+        </div>
+    </div>
+    <div class="footer-bottom-bar">
+        <p>Copyright © 2025 Abroad Stars, All rights reserved. Powered by One Earth Tech.</p>
+    </div>
+</div>

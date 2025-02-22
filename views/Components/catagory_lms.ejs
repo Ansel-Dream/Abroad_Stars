@@ -1,0 +1,168 @@
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        .categories-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .category-card {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            position: relative;
+            margin-bottom: 45px;
+            box-shadow: -2px -1px 14px gray;
+            position: relative;
+            transition: box-shadow 0.3s;
+        }
+
+        .category-card:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            /* transform: translateX(-10px); */
+            /* z-index: 1000; */
+        }
+
+        .category-label {
+            position: absolute;
+            box-shadow: 5px 7px 20px gray;
+            top: -27px;
+            left: 20px;
+            background-color: #00bfff;
+            color: white;
+            padding: 16px 31px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .category-label span {
+            display: block;
+        }
+
+        .category-content {
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .category-content ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .category-content ul li {
+            margin-bottom: 10px;
+            position: relative;
+            padding-left: 25px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .category-content ul li::before {
+            content: "\2022";
+            color: black;
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .background-shape {
+            position: absolute;
+            z-index: -1;
+            height: 173px;
+            width: 333px;
+            border-radius: 19px;
+            /* background: linear-gradient(230deg, rgb(120, 73, 228) 24%, rgb(80, 53, 242) 100%); */
+            background-color: #f1c124;
+            top: -10px;
+            left: -10px;
+        }
+
+        @media (max-width: 768px) {
+            .category-label {
+                top: -10px;
+                left: 10px;
+                padding: 5px 10px;
+                font-size: 0.9em;
+            }
+
+            .category-card {
+                padding: 15px;
+            }
+
+            .category-content {
+                padding: 15px;
+            }
+        }
+    </style>
+    <div class="categories-container">
+        <div class="category-card">
+            <div class="background-shape"></div>
+            <div class="category-label">
+                <span>Accreditation</span>
+            </div>
+            <div class="category-content">
+                <p>The IUK-ISM is registered and collaborates with several leading international institutions and
+                    programs, including:</p>
+                <ul>
+                    <li>PhD Program in Biomedicine and Health in the EU (ORPHEUS)</li>
+                    <li>Institute for International Medical Education (IIME)</li>
+                    <li>Foundation for the Advancement of International Medical Education and Research (FAIMER).</li>
+                    <li>International Association for Medical Education (AMEE)</li>
+                    <li>Educational Commission for Foreign Medical Graduates (ECFMG)</li>
+                    <li>World Health Organization (WHO)</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <div class="background-shape"></div>
+            <div class="category-label">
+                <span>SSC / HSSC</span>
+            </div>
+            <div class="category-content">
+                <ul>
+                    <li>Access study materials tailored specifically to the requirements of your Board of
+                        Intermediate and Secondary Education (BISE).</li>
+                    <li>Learn from highly qualified and experienced Pakistani educators who understand the local
+                        education system.</li>
+                    <li>Engage in interactive lessons, quizzes, and activities that make learning more dynamic and
+                        effective.</li>
+                    <li>Get comprehensive exam preparation support with past papers, mock tests, and focused
+                        revision strategies.</li>
+                    <li>Enjoy the flexibility of studying at your own pace, with 24/7 access to course content from
+                        anywhere.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="category-card">
+            <div class="background-shape"></div>
+            <div class="category-label">
+                <span>Tech Genesis Courses</span>
+            </div>
+            <div class="category-content">
+                <ul>
+                    <li>Learn directly from industry professionals with real-world experience in cutting-edge
+                        technologies.</li>
+                    <li>Dive into a wide array of technical subjects, from web development and cyber security to AI
+                        and cloud computing.</li>
+                    <li>Gain practical, hands-on experience by working on real-world projects that simulate industry
+                        challenges.</li>
+                    <li>Flexible learning options – study on your own schedule with 24/7 access to our comprehensive
+                        online resources.</li>
+                    <li>Develop in-demand technical skills that are essential for launching and advancing a
+                        successful tech career.</li>
+                </ul>
+            </div>
+        </div>
+    </div>

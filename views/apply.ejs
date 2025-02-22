@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply Us Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon" href="https://api.dsapsol.com/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon" href="https://api.dsapsol.com/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f1f1f1;
+        }
+
+        .apply-most-outsider {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 50px;
+        }
+
+        .apply-us-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 90%;
+            max-width: 1100px;
+            padding: 40px;
+        }
+
+        .apply-us-image-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .apply-us-image-container img {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .apply-us-image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .apply-us-form-container {
+            flex: 1;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .apply-us-form-container h1 {
+            color: #333;
+            font-size: 32px;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .apply-us-form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+        }
+
+        .apply-us-form-group label {
+            color: #555;
+            font-size: 16px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .apply-us-form-group input,
+        .apply-us-form-group textarea,
+        .apply-us-form-group select {
+            padding: 14px;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            font-size: 16px;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .apply-us-form-group input:focus,
+        .apply-us-form-group textarea:focus {
+            border-color: #4facfe;
+            box-shadow: 0 0 5px rgba(79, 172, 254, 0.3);
+            outline: none;
+        }
+
+        .apply-us-form-group textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        .apply-us-submit-btn {
+            background-color: #f36f3a;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 50%;
+            margin: 20px 0;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .apply-us-submit-btn:hover {
+            background-color: #e55d2b;
+            transform: translateY(-2px);
+        }
+
+        .apply-us-alert {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .apply-us-container {
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                box-sizing: content-box;
+                flex-wrap: nowrap;
+            }
+
+            .apply-us-image-container {
+                order: -1;
+                margin-bottom: 30px;
+            }
+
+            .apply-us-form-container {
+                padding: 15px;
+            }
+
+            .apply-us-submit-btn {
+                width: 70%;
+            }
+
+            .apply-us-image-container img {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('common/header') %>
+        <div class="apply-most-outsider">
+            <% if(success) { %>
+                <div class="apply-us-alert" role="alert">
+                    <span>Success! <%= success %></span>
+                </div>
+                <% } %>
+                    <div class="apply-us-container">
+                        <div class="apply-us-image-container">
+                            <img src="https://api.dsapsol.com/apply_us.jpg" alt="Application Illustration">
+                        </div>
+                        <div class="apply-us-form-container">
+                            <h1>Apply Now</h1>
+                            <form method="post" enctype="multipart/form-data">
+                                <div class="apply-us-form-group">
+                                    <label for="fullname">Full Name</label>
+                                    <input type="text" id="fullname" name="fullname" required>
+                                </div>
+                                <div class="apply-us-form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="apply-us-form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="apply-us-form-group">
+                                    <label for="matric">Matric/SSC/10 Grade/ O-Levels</label>
+                                    <input type="file" id="matric" name="matric" accept=".pdf,.doc,.docx" required>
+                                </div>
+                                <div class="apply-us-form-group">
+                                    <label for="Inter">Inter/F.Sc/HSC/12 Grade/ A-Levels</label>
+                                    <input type="file" id="Inter" name="Inter" accept=".pdf,.doc,.docx" required>
+                                </div>
+                                <div class="apply-us-form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" required></textarea>
+                                </div>
+                                <button type="submit" class="apply-us-submit-btn">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+        </div>
+        <%- include('common/footer') %>
+</body>
+
+</html>

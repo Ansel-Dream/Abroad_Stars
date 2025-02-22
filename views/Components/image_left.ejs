@@ -1,0 +1,129 @@
+<style>
+    .index-most-outsider {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f8f9fa;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+    }
+
+    .visual {
+        flex: 1;
+        min-width: 300px;
+        max-width: 720px;
+        margin: 10px;
+    }
+
+    .visual img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .text {
+        flex: 1;
+        min-width: 300px;
+        max-width: 720px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .text h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 20px;
+        color: #343a40;
+    }
+
+    .text p {
+        font-size: 1rem;
+        color: #6c757d;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 10px;
+    }
+
+    .action-buttons .action-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+
+    .action-buttons .action-btn-primary {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .action-buttons .action-btn-primary:hover {
+        background-color: #218838;
+    }
+
+    .action-buttons .action-btn-secondary {
+        background-color: #e9ecef;
+        color: #6c757d;
+    }
+
+    .action-buttons .action-btn-secondary:hover {
+        background-color: #d6d8db;
+    }
+
+    @media (max-width: 768px) {
+        .wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text h2 {
+            font-size: 1.5rem;
+        }
+
+        .text p {
+            font-size: 0.9rem;
+        }
+
+        .action-buttons .action-btn {
+            font-size: 0.9rem;
+            padding: 8px 16px;
+        }
+    }
+</style>
+<div class="index-most-outsider">
+    <div class="wrapper">
+        <div class="visual">
+            <img src="https://placehold.co/720x600" alt="Placeholder image with dimensions 720x600">
+        </div>
+        <div class="text">
+            <h2>Before they sold out readymade gluten</h2>
+            <p>Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard
+                tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon
+                try-hard chambray.</p>
+            <div class="action-buttons">
+                <button class="action-btn action-btn-primary">Button</button>
+                <button class="action-btn action-btn-secondary">Button</button>
+            </div>
+        </div>
+    </div>
+</div>

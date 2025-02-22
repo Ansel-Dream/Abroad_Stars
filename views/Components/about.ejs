@@ -1,0 +1,251 @@
+<style>
+    .about-most-outsider {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f9fa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .about-container {
+        max-width: 1200px;
+        background-color: #ffffff;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        padding: 40px;
+        margin: 20px;
+        border: 1px solid #0cc0df;
+    }
+
+    .about-text {
+        flex: 1;
+        padding-right: 40px;
+    }
+
+    .about-text h2 {
+        color: #6c757d;
+        font-size: 14px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    .about-text h1 {
+        color: #343a40;
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .about-text h1 span {
+        color: #0cc0df;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 0 5px;
+        border-radius: 5px;
+    }
+
+    .unordered-list {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.5;
+        margin-left: 20px;
+        text-align: left;
+    }
+
+    .about-text .cta-btn {
+        display: inline-block;
+        padding: 12px 25px;
+        background-color: #f36f45;
+        color: #ffffff;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+
+    .about-text .cta-btn:hover {
+        background-color: #357ab8;
+        transform: translateY(-2px);
+    }
+
+    .about-image {
+        flex: 1;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        height: auto;
+    }
+
+    .about-image .image-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        height: 300px;
+        background-color: #2d3e50;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .about-image .image-overlay::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 200px;
+        height: 200px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        z-index: -2;
+    }
+
+    .colums {
+        flex-direction: row-reverse;
+    }
+
+    .marginnn {
+        margin-left: 30px;
+    }
+
+    /* Mobile View Fixes */
+    @media (max-width: 768px) {
+        .about-container {
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .marginnn {
+            margin-left: 0px !important;
+        }
+
+        .colums {
+            flex-direction: column-reverse;
+        }
+
+        .about-text {
+            padding-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .about-text h1 {
+            font-size: 32px;
+            margin-top: 25px;
+        }
+
+        .unordered-list {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .about-image {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .about-image img {
+            max-width: 90%;
+            height: auto;
+        }
+
+        .about-image .image-overlay {
+            width: 200px;
+            height: 200px;
+        }
+
+        .about-image .image-overlay::before {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .about-text h1 {
+            font-size: 28px;
+        }
+
+        .unordered-list {
+            font-size: 14px;
+            padding-left: 15px;
+        }
+
+        .about-text .cta-btn {
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+    }
+</style>
+
+<div class="about-most-outsider">
+    <div class="about-container colums">
+        <div class="about-text marginnn">
+            <h1><span>Universities</span><br />on panel</h1>
+            <ul class="unordered-list">
+                <li>Kyrgyz State Medical Academy (KSMA)</li>
+                <li>International Higher School of Medicine (IHSM)</li>
+                <li>International University of Kyrgyzstan (ISM IUK)</li>
+                <li>AlaToo International University</li>
+                <li>University of South Asia</li>
+                <li>Special focus is paid to the facilities and international accreditation of our universities so that
+                    our
+                    students have all facilities required to learn medicine and the required recognition from
+                    international
+                    licensing bodies so that our graduates are eligible for practice worldwide.</li>
+            </ul>
+            <a class="cta-btn" href="/contact">Contact Us</a>
+        </div>
+        <div class="about-image">
+            <div class="image-overlay"></div>
+            <img src="https://api.dsapsol.com/about_mission.jpg"
+                alt="A woman working on a laptop in a creative workspace" />
+        </div>
+    </div>
+</div>
+
+<div class="about-most-outsider">
+    <div class="about-container" style="border: 1px solid gray;">
+        <div class="about-text">
+            <h1>Our services in <span>Kyrgyzstan</span> include</h1>
+            <ul class="unordered-list">
+                <li>Airport pickup</li>
+                <li>Full assistance during documentation and processing in the university</li>
+                <li>Free transportation service between Campuses</li>
+                <li>State-of-the-art and modern VIP Hostel for our students with 3 times Pakistani Mess, laundry
+                    services,
+                    praying area, and Cafeteria.</li>
+                <li>Sports facilities like playgrounds for football, cricket, volleyball, and table tennis tables are
+                    available for our students</li>
+                <li>Full support to students in arranging extracurricular activities and regular curricular and
+                    extracurricular activities with clinical workshops.</li>
+                <li>Library</li>
+                <li>Trips</li>
+                <li>Celebration of National Days of Pakistan and all religious festivals.</li>
+                <li>NLE, USMLE, and PLAB classes are arranged for students so that they can prepare for their desired
+                    licensing examination.</li>
+            </ul>
+            <a class="cta-btn" href="/contact">Contact Us</a>
+        </div>
+        <div class="about-image">
+            <div class="image-overlay"></div>
+            <img src="https://api.dsapsol.com/services.jpg" alt="A woman working on a laptop in a creative workspace" />
+        </div>
+    </div>
+</div>

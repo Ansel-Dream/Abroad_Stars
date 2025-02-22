@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="shortcut icon" href="https://api.dsapsol.com/favicon.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="https://api.dsapsol.com/favicon.jpg" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .gallery img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+        }
+
+        .video-gallery video {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .font-bold {
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('common/header') %>
+        <div class="bg-gray-100 p-5">
+            <div class="container mx-auto text-center">
+                <h1 class="text-3xl font-bold mb-5">Ambassador Visit</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gallery">
+                    <img src="https://api.dsapsol.com/ambes%20(1).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(2).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(3).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(4).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(5).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(6).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(7).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(8).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(9).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(10).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(11).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(12).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(13).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(14).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(15).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(16).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(17).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(18).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(19).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(20).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(21).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(22).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(23).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    <img src="https://api.dsapsol.com/ambes%20(24).jpg" alt="Image"
+                        class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                </div>
+
+                <div class="container mx-auto text-center">
+                    <h1 class="text-3xl font-bold mb-5">Farewell Dinner 2024</h1>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gallery">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(1).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(2).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(3).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(4).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(5).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(6).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(7).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(8).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(9).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(10).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(11).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        <img src="https://api.dsapsol.com/farewell_dinner%20(12).jpg" alt="Image"
+                            class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                    </div>
+
+                    <div class="container mx-auto text-center">
+                        <h1 class="text-3xl font-bold mb-5">Breast Cancer</h1>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gallery">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(1).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(2).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(3).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(4).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(5).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(6).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(7).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(8).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(9).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(10).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(11).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(12).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(13).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(14).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(15).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/brest_cancer%20(16).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+
+                    <div class="container mx-auto text-center">
+                        <h1 class="text-3xl font-bold mb-5">Orientation</h1>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 gallery">
+                            <img src="https://api.dsapsol.com/orinte%20(1).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/orinte%20(2).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/orinte%20(3).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                            <img src="https://api.dsapsol.com/orinte%20(4).jpg" alt="Image"
+                                class="rounded-lg shadow-md cursor-pointer" onclick="openLightbox(this.src)">
+                        </div>
+                    </div>
+
+                    <div id="lightbox" class="lightbox flex" onclick="closeLightbox()">
+                        <img id="lightbox-img" src="" alt="">
+                    </div>
+
+                    <script>
+                        function openLightbox(src) {
+                            document.getElementById('lightbox').style.display = 'flex';
+                            document.getElementById('lightbox-img').src = src;
+                        }
+                        function closeLightbox() {
+                            document.getElementById('lightbox').style.display = 'none';
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+
+        <%- include('common/footer') %>
+</body>
+
+</html>

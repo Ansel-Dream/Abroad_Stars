@@ -1,0 +1,160 @@
+<style>
+    .video-section-outermost {
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+        background-color: #f9f9f9;
+        color: #fff;
+    }
+
+    .video-section-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        padding: 20px;
+    }
+
+    .video-section-content {
+        display: flex;
+        background-color: #0cc0df;
+        border-radius: 10px;
+        box-shadow: -13px 14px 10px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        max-width: 1200px;
+        width: 100%;
+        flex-direction: row;
+        border: 2px solid gray;
+    }
+
+    .video-section-video-container {
+        position: relative;
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .video-section-video-container video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .video-section-play-button {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        background-color: #fff;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .video-section-play-button i {
+        color: #FF5733;
+        font-size: 24px;
+    }
+
+    .video-section-text-content {
+        flex: 1;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .video-section-text-content h1 {
+        font-family: "Poppins", serif;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .video-section-text-content p {
+        font-size: 16px;
+        font-family: "Poppins", serif;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+
+    .video-section-buttons {
+        display: flex;
+        gap: 20px;
+    }
+
+    .video-section-buttons a {
+        padding: 15px 30px;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s;
+    }
+
+    .video-section-buttons .apply-now {
+        background-color: #f36f45;
+        color: #fff;
+    }
+
+    .video-section-buttons .discover-more {
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+
+    .video-section-buttons .discover-more:hover {
+        background-color: #f36f45;
+        border-color: #f36f45;
+    }
+
+    @media (max-width: 768px) {
+        .video-section-content {
+            flex-direction: column;
+        }
+
+        .video-section-text-content {
+            padding: 20px;
+        }
+
+        .video-section-text-content h1 {
+            font-size: 28px;
+        }
+
+        .video-section-text-content p {
+            font-size: 14px;
+        }
+
+        .video-section-buttons a {
+            padding: 10px 20px;
+        }
+    }
+</style>
+
+<div class="video-section-outermost">
+    <div class="video-section-container">
+        <div class="video-section-content">
+            <div class="video-section-video-container">
+                <video autoplay loop muted controls>
+                    <source src="https://api.dsapsol.com/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <!-- <div class="video-section-play-button">
+                    <i class="fas fa-play"></i>
+                </div> -->
+            </div>
+            <div class="video-section-text-content">
+                <h1>The International University of Kyrgyzstan (IUK)</h1>
+                <p>The International University of Kyrgyzstan (IUK) offers programs accredited by all major
+                    international medical councils, including WHO and ECFMG. As a leading institution for medical and
+                    dental education, IUK emphasizes a holistic approach, combining academic excellence with
+                    extracurricular opportunities in a supportive environment. Ranked among the top universities
+                    nationally, IUK attracts students from over 10 countries worldwide.</p>
+                <div class="video-section-buttons">
+                    <a class="apply-now" href="/apply">Apply Now</a>
+                    <a class="discover-more" href="/university">Discover more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

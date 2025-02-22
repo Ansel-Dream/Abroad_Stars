@@ -1,0 +1,88 @@
+<title>University</title>
+<style>
+    .section-common-most-outside {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 70vh;
+        font-family: Arial, sans-serif;
+    }
+
+    .section-common-container {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    .background-image {
+        width: 100%;
+        height: 80%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        filter: brightness(50%);
+    }
+
+    .section-common-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .section-common-overlay2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-common-text {
+        color: white;
+        font-size: 48px;
+        font-weight: bold;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .section-common-text-small {
+        color: white;
+        font-size: 36px;
+        font-weight: bold;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    @media (max-width: 768px) {
+        .text {
+            font-size: 36px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .text {
+            font-size: 24px;
+        }
+    }
+</style>
+<div class="section-common-most-outside">
+    <div class="section-common-container">
+        <img alt="A group of people working together in an office setting" class="background-image" height="1080"
+            src="<%= section_images %>"
+            width="1920" />
+        <div class="section-common-overlay">
+            <div class="section-common-text">
+                <%= name %>
+            </div><br>
+            <span class="section-common-text-small">
+                <%= slogan %>
+            </span>
+        </div>
+    </div>
+</div>

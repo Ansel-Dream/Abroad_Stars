@@ -1,0 +1,253 @@
+<style>
+    .why-most-outsider {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+
+    .why-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .why-header {
+        display: flex;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    .why-header h2 {
+        color: #00bfff;
+        margin: 0;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .pers {
+        font-size: 20px;
+
+    }
+
+    .why-header::after {
+        content: '';
+        flex: 1;
+        height: 1px;
+        background-color: #00bfff;
+        margin-left: 10px;
+    }
+
+    .why-main-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .why-main-content .why-left {
+        flex: 1;
+        max-width: 75%;
+        margin-bottom: 20px;
+    }
+
+    .why-main-content .why-left h1 {
+        font-size: 36px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+    .why-main-content .why-right {
+        /* flex: 2; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .why-main-content .why-right .why-feature {
+        width: 45%;
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+
+    .why-main-content .why-right .why-feature i {
+        color: #00bfff;
+        font-size: 24px;
+        margin-right: 10px;
+    }
+
+    .why-main-content .why-right .why-feature h3 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .why-main-content .why-right .why-feature p {
+        margin: 5px 0 0 0;
+        color: #666;
+    }
+
+    @media (max-width: 768px) {
+        .why-main-content {
+            flex-direction: column;
+        }
+
+        .why-main-content .why-left {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        .why-main-content .why-left h1 {
+            text-align: justify;
+            font-size: 22px;
+        }
+
+        .why-main-content .why-right .why-feature p {
+            text-align: justify;
+        }
+
+        .why-main-content .why-right {
+            justify-content: center;
+        }
+
+        .why-main-content .why-right .why-feature {
+            width: 90%;
+            justify-content: center;
+            /* text-align: center; */
+        }
+
+        .why-main-content .why-right .why-feature div {
+            margin-left: 20px;
+        }
+
+        .why-main-content .why-right .why-feature i {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
+</style>
+<div class="why-most-outsider">
+    <div class="why-container">
+        <div class="why-header">
+            <h2>HOSTEL</h2>
+        </div>
+        <div class="why-main-content">
+            <div class="why-left">
+                <h1>Welcome to IUK, where our hostels offer comfort, convenience, and community, with separate
+                    facilities for male and female medical students.
+                    <br /><span class="pers">Here's an overview of our top-notch hostel facilities:</span>
+                    </h1>
+            </div>
+            <div class="why-right">
+                <div class="why-feature">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h3>Comfortable Accommodation</h3>
+                        <p>
+                            Each room is thoughtfully furnished with cozy beds, spacious study desks, secure almirahs,
+                            and ample storage, providing a comfortable and home-like atmosphere ideal for both
+                            relaxation and focused study.
+                        </p>
+                    </div>
+                </div>
+                <div class="why-feature">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h3>High Speed Internet:</h3>
+                        <p>
+                            Enjoy seamless connectivity with high-speed Wi-Fi available throughout the hostel, giving
+                            you uninterrupted access to online resources, academic materials, and effortless
+                            communication with family and friends.
+                        </p>
+                    </div>
+                </div>
+                <div class="why-feature">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h3>Study Space:</h3>
+                        <p>
+                            Our hostels provide dedicated study areas, thoughtfully designed for both individual focus
+                            and group collaboration, allowing you to excel in your coursework while engaging with fellow
+                            students in a productive environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="why-feature">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h3>Recreation & Common Area:</h3>
+                        <p>
+                            Our hostels are designed for a well-rounded student experience, offering a variety of
+                            entertainment and recreational facilities, including TVs, a sports hall, playgrounds, a
+                            well-stocked library, and cozy seating areas—creating the perfect space to relax, socialize,
+                            and recharge.
+                        </p>
+                    </div>
+                </div>
+                <div class="why-feature">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h3>Secure Environment:</h3>
+                        <p>
+                            Safety is our top priority, with 24/7 security and controlled access to ensure a secure
+                            environment. The hostel offers separate accommodations for male and female students,
+                            allowing you to focus on your studies with complete peace of mind.
+                        </p>
+                    </div>
+                </div>
+                <div class="why-feature">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h3>Laundry Service: </h3>
+                        <p>
+                            The hostel offers convenient on-site laundry facilities, ensuring hassle-free maintenance of
+                            your personal belongings while helping you stay clean, organized, and comfortable.
+                        </p>
+                    </div>
+                </div>
+                <div class="why-feature">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h3>Mess Hall Facilities: </h3>
+                        <p>
+                            Enjoy wholesome and nutritious meals at the hostel mess, offering a variety of authentic
+                            dishes from your home country, including Pakistani, Indian, Bangladeshi, and Arabic cuisine,
+                            ensuring both convenience and flexibility.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="why-feature">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h3>Proximity to Campus: </h3>
+                        <p>
+                            The hostel is ideally situated within the university premises, reducing travel time and
+                            enabling you to maximize your daily productivity.
+                        </p>
+                    </div>
+                </div>
+                <div class="why-feature">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h3>Cafeteria: </h3>
+                        <p>
+                            The hostel features a well-equipped cafeteria, available around the clock to cater to
+                            students' dietary needs, offering a variety of fresh and delicious meal options.
+                        </p>
+                    </div>
+                </div>
+                <div class="why-feature">
+                    <i class="fas fa-arrow-circle-right"></i>
+                    <div>
+                        <h3>Gym Facilities: </h3>
+                        <p>The hostel is equipped with a modern indoor gym, providing students with a convenient space
+                            to maintain their fitness and well-being alongside their academic pursuits.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

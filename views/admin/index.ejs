@@ -1,0 +1,168 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Our Services
+    </title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .services-header {
+            margin-bottom: 40px;
+        }
+
+        .services-header h2 {
+            font-size: 2em;
+            margin: 0;
+        }
+
+        .services-header p {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .services {
+            display: flex;
+            justify-content: space-between;
+            /* flex-wrap: wrap; */
+        }
+
+        .service-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            flex: 1;
+            min-width: 250px;
+            max-width: 280px;
+            text-align: center;
+        }
+
+        .service-item img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+        }
+
+        .service-item h3 {
+            font-size: 1.5em;
+            margin: 0 0 10px;
+        }
+
+        .service-item p {
+            color: #666;
+            font-size: 1em;
+            margin: 0 0 20px;
+        }
+
+        .service-item a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .service-item a:hover {
+            text-decoration: underline;
+        }
+
+        .service-item a i {
+            margin-left: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="services-header">
+            <h2>
+                Our Services
+            </h2>
+            <p>
+                A choice that makes the difference.
+            </p>
+        </div>
+        <div class="services">
+            <div class="service-item">
+                <img alt="Icon representing student login" src="https://placehold.co/80x80" />
+                <h3>
+                    Student Login
+                </h3>
+                <p>
+                    Students can log in to the e-portal.
+                </p>
+                <a href="#">
+                    Login Here
+                    <i class="fas fa-arrow-right">
+                    </i>
+                </a>
+            </div>
+            <div class="service-item">
+                <img alt="Icon representing university login" src="https://placehold.co/80x80" />
+                <h3>
+                    University Login
+                </h3>
+                <p>
+                    University Staff can log in to the portal.
+                </p>
+                <a href="#" style="color: #ff0000;">
+                    Login Here
+                    <i class="fas fa-arrow-right">
+                    </i>
+                </a>
+            </div>
+            <div class="service-item">
+                <img alt="Icon representing book flight" src="https://placehold.co/80x80" />
+                <h3>
+                    Book Flight
+                </h3>
+                <p>
+                    Students can book their respective flights.
+                </p>
+                <a href="#">
+                    Book Now
+                    <i class="fas fa-arrow-right">
+                    </i>
+                </a>
+            </div>
+            <div class="service-item">
+                <img alt="Icon representing apply admission" src="https://placehold.co/80x80" />
+                <h3>
+                    Apply Admission
+                </h3>
+                <p>
+                    Apply Now for the Top Ranked Universities
+                </p>
+                <a href="#">
+                    Apply Now
+                    <i class="fas fa-arrow-right">
+                    </i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
